@@ -1,0 +1,21 @@
+CurrencyConvertorService:
+  Db:
+    LogsConnString:
+      settings-key: CurrencyConvertorService-LogsConnString
+      types:
+        - AzureTableStorage
+    DataConnString:
+      settings-key: CurrencyConvertorService-DataConnString
+
+SlackNotifications:
+  AzureQueue:
+    ConnectionString:
+      settings-key: SlackNotificationsConnString
+      types:
+        - AzureTableStorage
+    QueueName:
+      settings-key: SlackQueueName
+
+MonitoringServiceClient:
+  MonitoringServiceUrl:
+    settings-key: MonitoringServiceUrl
