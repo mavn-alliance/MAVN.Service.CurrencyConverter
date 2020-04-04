@@ -13,31 +13,31 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0. Solution items", "0. Sol
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1. Domain", "1. Domain", "{CC2067D7-1971-47BB-B491-5649EA3C18B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConvertor.Domain", "src\MAVN.Service.CurrencyConvertor.Domain\MAVN.Service.CurrencyConvertor.Domain.csproj", "{F5B2F6B8-A8CC-4612-8F1D-C063EB8C8955}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConverter.Domain", "src\MAVN.Service.CurrencyConverter.Domain\MAVN.Service.CurrencyConverter.Domain.csproj", "{F5B2F6B8-A8CC-4612-8F1D-C063EB8C8955}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConvertor.DomainServices", "src\MAVN.Service.CurrencyConvertor.DomainServices\MAVN.Service.CurrencyConvertor.DomainServices.csproj", "{2D5F52EC-2A27-4045-81ED-72355E2A6325}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConverter.DomainServices", "src\MAVN.Service.CurrencyConverter.DomainServices\MAVN.Service.CurrencyConverter.DomainServices.csproj", "{2D5F52EC-2A27-4045-81ED-72355E2A6325}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2. Repositories", "2. Repositories", "{BF745453-B940-470E-81BC-43FB67703D4E}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3. Contract", "3. Contract", "{14B5AF15-F733-4EF0-9FB9-3E61C4C83ADD}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConvertor.Contract", "contract\MAVN.Service.CurrencyConvertor.Contract\MAVN.Service.CurrencyConvertor.Contract.csproj", "{931B95E3-AF9F-4A4C-9C6A-5959C2FBCAC9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConverter.Contract", "contract\MAVN.Service.CurrencyConverter.Contract\MAVN.Service.CurrencyConverter.Contract.csproj", "{931B95E3-AF9F-4A4C-9C6A-5959C2FBCAC9}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4. Client", "4. Client", "{C9A2CFDE-EA32-4946-B679-7CE6EFA816B8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConvertor.Client", "client\MAVN.Service.CurrencyConvertor.Client\MAVN.Service.CurrencyConvertor.Client.csproj", "{3C300C31-97D3-41E8-A627-C53491BDA28B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConverter.Client", "client\MAVN.Service.CurrencyConverter.Client\MAVN.Service.CurrencyConverter.Client.csproj", "{3C300C31-97D3-41E8-A627-C53491BDA28B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "5. Tests", "5. Tests", "{8F9036B1-5106-4C69-B2D2-B78EE52687A0}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConvertor.Tests", "tests\MAVN.Service.CurrencyConvertor.Tests\MAVN.Service.CurrencyConvertor.Tests.csproj", "{A61FFDEE-5725-4650-A788-6E55EE5EFD5B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConverter.Tests", "tests\MAVN.Service.CurrencyConverter.Tests\MAVN.Service.CurrencyConverter.Tests.csproj", "{A61FFDEE-5725-4650-A788-6E55EE5EFD5B}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "6. Hosts", "6. Hosts", "{EE7F3159-E06C-497F-96D4-DB2A6B03A6AB}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConvertor", "src\MAVN.Service.CurrencyConvertor\MAVN.Service.CurrencyConvertor.csproj", "{E414FDB9-FEEA-4CD0-9BBA-D1541601DF29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MAVN.Service.CurrencyConverter", "src\MAVN.Service.CurrencyConverter\MAVN.Service.CurrencyConverter.csproj", "{E414FDB9-FEEA-4CD0-9BBA-D1541601DF29}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAVN.Service.CurrencyConvertor.MsSqlRepositories", "src\MAVN.Service.CurrencyConvertor.MsSqlRepositories\MAVN.Service.CurrencyConvertor.MsSqlRepositories.csproj", "{2A7209A3-CC9C-40D2-9476-46E009CC167D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAVN.Service.CurrencyConverter.MsSqlRepositories", "src\MAVN.Service.CurrencyConverter.MsSqlRepositories\MAVN.Service.CurrencyConverter.MsSqlRepositories.csproj", "{2A7209A3-CC9C-40D2-9476-46E009CC167D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAVN.Service.CurrencyConvertor.MsSqlRepositories.Tests", "tests\MAVN.Service.CurrencyConvertor.MsSqlRepositories.Tests\MAVN.Service.CurrencyConvertor.MsSqlRepositories.Tests.csproj", "{11AAA48D-D764-4DA6-B4EA-2F37B9F910A0}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MAVN.Service.CurrencyConverter.MsSqlRepositories.Tests", "tests\MAVN.Service.CurrencyConverter.MsSqlRepositories.Tests\MAVN.Service.CurrencyConverter.MsSqlRepositories.Tests.csproj", "{11AAA48D-D764-4DA6-B4EA-2F37B9F910A0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
