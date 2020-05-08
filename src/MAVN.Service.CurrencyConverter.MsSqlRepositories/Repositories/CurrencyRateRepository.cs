@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.CurrencyConverter.Domain.Models;
 using MAVN.Service.CurrencyConverter.Domain.Repositories;
 using MAVN.Service.CurrencyConverter.MsSqlRepositories.Entities;

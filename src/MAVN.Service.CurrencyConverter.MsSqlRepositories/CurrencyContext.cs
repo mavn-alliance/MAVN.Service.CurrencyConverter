@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using System.Data.Common;
 using JetBrains.Annotations;
-using Lykke.Common.MsSql;
+using MAVN.Common.MsSql;
 using MAVN.Service.CurrencyConverter.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
