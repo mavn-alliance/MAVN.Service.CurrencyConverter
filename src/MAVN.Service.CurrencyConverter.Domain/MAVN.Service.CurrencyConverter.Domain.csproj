@@ -6,5 +6,6 @@
   <ItemGroup>
     <PackageReference Include="Lykke.Common" Version="7.5.0" />
     <PackageReference Include="MAVN.Numerics" Version="1.0.0" />
+    <PackageReference Include="Refit" Version="4.6.107" />
   </ItemGroup>
 </Project>
