@@ -6,7 +6,10 @@ CurrencyConvertorService:
         - AzureTableStorage
     DataConnString:
       settings-key: CurrencyConvertorService-DataConnString
-
+   ExchangeRatesApiUrl:
+     settings-key: ExchangeRatesApiUrl
+   RatesApiUrl:
+     settings-key: RatesApiUrl
 SlackNotifications:
   AzureQueue:
     ConnectionString:

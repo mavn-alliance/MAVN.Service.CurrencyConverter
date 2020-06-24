@@ -1,4 +1,4 @@
-using JetBrains.Annotations;
+﻿using JetBrains.Annotations;
 
 namespace MAVN.Service.CurrencyConverter.Settings
 {
@@ -6,5 +6,7 @@ namespace MAVN.Service.CurrencyConverter.Settings
     public class CurrencyConvertorSettings
     {
         public DbSettings Db { get; set; }
+        public string ExchangeRatesApiUrl { get; set; }
+        public string RatesApiUrl { get; set; }
     }
 }

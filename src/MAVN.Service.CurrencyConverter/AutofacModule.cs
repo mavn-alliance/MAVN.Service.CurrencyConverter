@@ -1,7 +1,9 @@
-using Autofac;
+﻿using Autofac;
 using JetBrains.Annotations;
 using Lykke.SettingsReader;
+using MAVN.Service.CurrencyConverter.Domain.Services;
 using MAVN.Service.CurrencyConverter.Settings;
+using Refit;
 
 namespace MAVN.Service.CurrencyConverter
 {
@@ -21,6 +23,12 @@ namespace MAVN.Service.CurrencyConverter
 
             builder.RegisterModule(
                 new MsSqlRepositories.AutofacModule(_appSettings.CurrencyConvertorService.Db.DataConnString));
+
+            builder.RegisterInstance(RestService.For<IExchangeRatesApi>(_appSettings.CurrencyConvertorService.ExchangeRatesApiUrl))
+                .SingleInstance();
+
+            builder.RegisterInstance(RestService.For<IRatesApi>(_appSettings.CurrencyConvertorService.RatesApiUrl))
+                .SingleInstance();
         }
     }
 }
