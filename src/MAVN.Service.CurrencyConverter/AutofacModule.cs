@@ -33,7 +33,6 @@ namespace MAVN.Service.CurrencyConverter
 
             builder.RegisterInstance(RestService.For<IRatesApi>(_appSettings.CurrencyConvertorService.RatesApiUrl))
                 .SingleInstance();
-
         }
 
         private void RegisterDistributedCache(ContainerBuilder builder)

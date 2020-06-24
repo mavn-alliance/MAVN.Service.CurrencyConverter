@@ -2,6 +2,7 @@
 using System.Threading.Tasks;
 using Common;
 using MAVN.Numerics;
+using MAVN.Service.CurrencyConverter.Domain.Exceptions;
 using MAVN.Service.CurrencyConverter.Domain.Models;
 using MAVN.Service.CurrencyConverter.Domain.Services;
 using Microsoft.Extensions.Caching.Distributed;
@@ -54,7 +55,7 @@ namespace MAVN.Service.CurrencyConverter.DomainServices
             if (cached != null)
             {
                 var value = cached.DeserializeJson<ExchangeRatesModel>();
-                return (decimal)value.Rates[fromAsset];
+                return ReturnExchangeRate(fromAsset, value);
             }
 
             ExchangeRatesModel ratesResponse;
@@ -69,7 +70,18 @@ namespace MAVN.Service.CurrencyConverter.DomainServices
             }
 
             await SetCacheValueAsync(toAsset, ratesResponse);
-            return (decimal)ratesResponse.Rates[fromAsset];
+
+            return ReturnExchangeRate(fromAsset, ratesResponse);
+        }
+
+        private static decimal ReturnExchangeRate(string fromAsset, ExchangeRatesModel value)
+        {
+            var containsRate = value.Rates.TryGetValue(fromAsset, out var rate);
+
+            if (!containsRate)
+                throw new EntityNotFoundException();
+
+            return (decimal) rate;
         }
 
         private static string BuildCacheKey(string baseCurrency)
