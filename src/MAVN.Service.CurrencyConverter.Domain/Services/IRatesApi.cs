@@ -10,6 +10,6 @@ namespace MAVN.Service.CurrencyConverter.Domain.Services
     public interface IRatesApi
     {
         [Get("/latest")]
-        Task<ExchangeRatesModel> GetLatestExchangeRate([Query(CollectionFormat.Csv)] [AliasAs("symbols")] string[] currencies, [Query] [AliasAs("base")] string baseCurrency);
+        Task<ExchangeRatesModel> GetLatestExchangeRates([Query] [AliasAs("base")] string baseCurrency);
     }
 }
