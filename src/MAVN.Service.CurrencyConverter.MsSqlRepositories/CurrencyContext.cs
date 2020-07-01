@@ -1,13 +1,13 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Data.Common;
 using JetBrains.Annotations;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.CurrencyConverter.MsSqlRepositories.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace MAVN.Service.CurrencyConverter.MsSqlRepositories
 {
-    public class CurrencyContext : MsSqlContext
+    public class CurrencyContext : PostgreSQLContext
     {
         private const string SchemaName = "currency";
 
@@ -36,7 +36,7 @@ namespace MAVN.Service.CurrencyConverter.MsSqlRepositories
         {
         }
 
-        protected override void OnLykkeModelCreating(ModelBuilder modelBuilder)
+        protected override void OnMAVNModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<CurrencyRateEntity>()
                 .HasKey(o => new {o.BaseAsset, o.QuoteAsset});

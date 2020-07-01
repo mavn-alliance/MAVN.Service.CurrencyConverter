@@ -1,7 +1,7 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Threading.Tasks;
 using AutoMapper;
-using MAVN.Common.MsSql;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.CurrencyConverter.Domain.Models;
 using MAVN.Service.CurrencyConverter.Domain.Repositories;
 using MAVN.Service.CurrencyConverter.MsSqlRepositories.Entities;
@@ -12,10 +12,10 @@ namespace MAVN.Service.CurrencyConverter.MsSqlRepositories.Repositories
     // ReSharper disable once InconsistentNaming
     public class CurrencyRateRepository : ICurrencyRateRepository
     {
-        private readonly MsSqlContextFactory<CurrencyContext> _contextFactory;
+        private readonly PostgreSQLContextFactory<CurrencyContext> _contextFactory;
         private readonly IMapper _mapper;
 
-        public CurrencyRateRepository(MsSqlContextFactory<CurrencyContext> contextFactory, IMapper mapper)
+        public CurrencyRateRepository(PostgreSQLContextFactory<CurrencyContext> contextFactory, IMapper mapper)
         {
             _contextFactory = contextFactory;
             _mapper = mapper;
