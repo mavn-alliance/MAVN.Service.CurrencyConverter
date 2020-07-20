@@ -1,5 +1,5 @@
-using Autofac;
-using MAVN.Common.MsSql;
+﻿using Autofac;
+using MAVN.Persistence.PostgreSQL.Legacy;
 using MAVN.Service.CurrencyConverter.Domain.Repositories;
 using MAVN.Service.CurrencyConverter.MsSqlRepositories.Repositories;
 
@@ -16,7 +16,7 @@ namespace MAVN.Service.CurrencyConverter.MsSqlRepositories
 
         protected override void Load(ContainerBuilder builder)
         {
-            builder.RegisterMsSql(
+            builder.RegisterPostgreSQL(
                 _connectionString,
                 connString => new CurrencyContext(connString, false),
                 dbConn => new CurrencyContext(dbConn));

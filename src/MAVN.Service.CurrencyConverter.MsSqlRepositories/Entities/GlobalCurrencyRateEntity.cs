@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using MAVN.Numerics;
@@ -13,7 +13,7 @@ namespace MAVN.Service.CurrencyConverter.MsSqlRepositories.Entities
         public Guid Id { get; set; }
 
         [Required]
-        [Column("amount_in_tokens", TypeName = "nvarchar(64)")]
+        [Column("amount_in_tokens")]
         public Money18 AmountInTokens { get; set; }
 
         [Column("amount_in_currency")]
